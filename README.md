@@ -1,23 +1,23 @@
 
-Quick-Json is a python module that provides a fast and simple way to manipulate json data.
+Easy-Json is a python module that provides a fast and simple way to manipulate json data.
 
 ## Installation
 
 ```
-pip install quick-json
+pip install easyjson2
 ```
 
 ## Quick start
 
 
 ```python
-import quick_json as qjson
+import easyjson2 as ezjson
 
 
 json_str = '{"name":"quick_json","description":{"feature":"open to use."}}'
 
 # Get by path
-feature = qjson.JsonObject(json_str).get('description.feature')
+feature = ezjson.JsonObject(json_str).get('description.feature')
 print(feature) 
 #
 # Output:
