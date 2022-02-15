@@ -9,7 +9,7 @@ setuptools.setup(
     description='Get JSON quickly and easily',
     author='RunningIkkyu',
     author_email='389498623@qq.com',
-    url='https://github.com/RunningIkkyu/easyjson',
+    url='https://github.com/RunningIkkyu/easy-json',
     license='MIT',
     #long_description=io.open('README.md', encoding='utf-8').read(),
     test_suite = 'tests',
