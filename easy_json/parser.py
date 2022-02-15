@@ -2,6 +2,7 @@ import json
 from copy import deepcopy
 from enum import Enum
 
+
 class JsonObjectType (Enum):
     OBJECT = 1
     ARRAY = 2
@@ -10,7 +11,8 @@ class JsonObjectType (Enum):
     BOOLEAN = 5
     NULL = 6
 
-DEBUG = True
+
+DEBUG = False
 
 
 def debug_print(info):
