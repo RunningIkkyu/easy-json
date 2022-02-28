@@ -1,0 +1,19 @@
+on:
+  issues:
+    types:
+      - labeled
+      
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: View issue information
+        run: |
+          echo "Issue title: ${{ github.event.issue.title }}"
+          echo "Issue body: ${{ github.event.issue.body }}"
+
+# You also can print the whole github context to the logs to view more details.
+      - name: View the github context
+        run: echo "$GITHUB_CONTEXT"
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github)
